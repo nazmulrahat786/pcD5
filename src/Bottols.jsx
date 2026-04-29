@@ -28,7 +28,7 @@ setAddCard(remainCard)
             <h1 className='text-center font-bold my-2 text-2xl text-blue-600'>Total Bottles : {bottoles.length}</h1>
             <h1>
                 
-                <div className="flex overflow-x-scroll gap-2">
+                <div className="flex overflow-x-scroll h-44 pb-2 gap-2">
                     {
                         addCard.map(ac => <Addcard handleRemoveCard={handleRemoveCard } key={ac.id} ac={ac}></Addcard>)
                     }
