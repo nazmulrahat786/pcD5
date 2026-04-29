@@ -8,6 +8,7 @@ const Bottols = () => {
     const bottoles = btl
 
     const [addCard , setAddCard] = useState([])
+   
     const handleAddCard = (bottol) =>{
         
         const newAdded = [...addCard ,bottol]
@@ -26,7 +27,7 @@ setAddCard(remainCard)
         <div className="px-5">
             <h1 className='text-center font-bold my-2 text-2xl text-blue-600'>Total Bottles : {bottoles.length}</h1>
             <h1>
-                <h1>Total Add card {addCard.length}</h1>
+                
                 <div className="flex overflow-x-scroll gap-2">
                     {
                         addCard.map(ac => <Addcard handleRemoveCard={handleRemoveCard } key={ac.id} ac={ac}></Addcard>)
